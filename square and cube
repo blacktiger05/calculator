@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int square (int x)
+{
+	return x*x;
+}
+int cube (int x)
+{
+	return x*x*x;
+}
+int main ()
+{
+	int x , a;
+	cout << "how many times you want to test " << endl;
+	cin >> a;
+	for (int i=1; i <= a ; i++)
+	{
+			cout << "enter a value" << endl;
+			cin>> x;
+			cout << "square of given number is " << square (x) << endl;
+			cout << "cube of given number is " << cube (x) << endl;
+	}
+
+	if ( x > 0 )
+	{
+		cout << "number is positive" << endl;
+	}
+	else if ( x < 0 ) 
+	{
+		cout << "number is negative" << endl;
+	}
+	else
+	{
+		cout << "number is zero" << endl;
+	}
+
+	return 0;
+}
