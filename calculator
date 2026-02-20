@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int choice;
+	double num1, num2 , result;
+	cout << "simple calculator" << endl;
+	cout << "1.    addition" << endl;
+	cout << "2.    subraction"<< endl;
+	cout << "3.    multiplication" << endl;
+	cout << "4.    division" << endl;
+	
+	cout << "------------" << endl;
+	cout << "enter your choice (1 - 4)" ;
+	cin >> choice;
+	
+	cout << "enter the first number " ;
+	cin >> num1;
+	cout << "enter the second number ";
+	cin >> num2;
+	cout << "result ------------- result"<< endl;
+	switch (choice)
+	{
+		case 1: 
+		cout << "addition" << endl;
+			result = num1 + num2;
+		cout << "result:" << result << endl;
+		break;
+		case 2: 
+			result = num1 - num2;
+		cout << "subraction" << endl;
+		cout << "result:" << result << endl;
+		break;
+		case 3: 
+			result = num1 * num2;
+		cout << "multiplication" << endl;
+		cout << "result:" << result << endl;
+		break;
+		case 4: 
+		cout << "division" << endl;
+		if(num2 != 0) {
+		result = num1 / num2;
+		cout << "result:" << result << endl;
+		}
+		else {
+			cout << "error" << endl;
+		}
+		break;
+		default : 
+		cout << "invalid choice ! please select from 1 to 4"<< endl;
+		break;
+	}
+	
+	return 0 ;
+}
